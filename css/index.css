@@ -1,0 +1,9 @@
+
+/* forces "read more" button to be at the ottom of the footer, may need to be adjusted based on content*/
+.card-content {
+    /* not supported by mobile browsers, not an issue because  the columns display vertically on mobile*/
+    min-height: 50vh;
+  }
+
+
+  
