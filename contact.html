@@ -1,4 +1,5 @@
-<!-- TODO: Add more content, including recent projects--> 
+<!-- TODO: Implement redirect JS -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,7 +17,7 @@
         
     </head>
     <body>
-
+        
         <!-- Navbar -->
         <nav class="navbar is-link" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
@@ -28,24 +29,23 @@
             </div>
           
             <div id="navbarFull" class="navbar-menu">
-              <div class="navbar-start">
-                <a class="navbar-item" href="./">
-                  Home
-                </a>
-          
-                <a class="navbar-item" href="./about.html">
-                  About
-                </a>
-
-                <a class="navbar-item" href="./projects.html">
-                    Projects
-                </a>
-
-                <a class="navbar-item" href="./contact.html">
-                    Contact
-                </a>
-                </div>
-              </div>
+                <div class="navbar-start">
+                    <a class="navbar-item" href="./">
+                      Home
+                    </a>
+              
+                    <a class="navbar-item" href="./about.html">
+                      About
+                    </a>
+    
+                    <a class="navbar-item" href="./projects.html">
+                        Projects
+                    </a>
+    
+                    <a class="navbar-item" href="./contact.html">
+                        Contact
+                    </a>
+                    </div>
           
               <div class="navbar-end is-hidden-mobile">
                 <div class="navbar-item">
@@ -72,20 +72,48 @@
             </div>
           </nav>
 
-        <!-- Hero -->
-        <section class="hero">
-            <div class="hero-body">
-                <p class="title">
-                    Bryan Bergo
-                </p>
-                <p class="subtitle">Freshmen at Cal Poly Pomona with plenty of pre-course experience</p>
-                <p>Read more <a href="./about">about me</a> or check out some of my <a href="./projects">projects </a></p>
-            </div>
-        </section>   
+    <!-- Contact Form -->
+       <section class="section">
+            <form action="https://formspree.io/f/xjvdbder" method="POST">
+                <div class="field">
+                    <label class="label">
+                        Full Name
+                    </label>
+                    <div class="control">
+                        <input class="input" type="text" id="full-name" name="name" placeholder="Please enter your full name" required>
+                    </div>
+                </div>
 
-        <!-- 3 Most recente projects-->
-        <div class="columns">
-        </div>
+                <div class="field">
+                    <label class="label">
+                        Email
+                    </label>
+                    <div class="control">
+                        <input class="input" type="email" id="email-address" name="_replyto" placeholder=" ex: slash@gunsNroses.net" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">
+                        Message
+                    </label>
+                    <div class="control">
+                        <textarea class="textarea" id="message" name="message"></textarea>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <input class="input is-info button" type="submit" value="Submit">
+                    </div>
+                </div>
+
+
+       
+
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </form>
+        </section>
 
         <!-- Footer -->
         <footer class="footer">
