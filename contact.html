@@ -1,5 +1,3 @@
-<!-- TODO: Implement redirect JS -->
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -74,45 +72,60 @@
 
     <!-- Contact Form -->
        <section class="section">
-            <form action="https://formspree.io/f/xjvdbder" method="POST">
-                <div class="field">
-                    <label class="label">
-                        Full Name
-                    </label>
-                    <div class="control">
-                        <input class="input" type="text" id="full-name" name="name" placeholder="Please enter your full name" required>
+            <div class="columns">
+                <div class="column"></div>
+                <div class="column">
+
+                    <!-- Form -->
+                    <div class="card">
+                        <div id="contact-form-status"></div>
+
+                        <div class="card-content">
+                            <p class="title">Get In Touch</p>
+                            <form action="https://formspree.io/f/xjvdbder" method="POST" target="_blank" id="contact-form">
+                                <div class="field">
+                                    <label class="label">
+                                        Full Name
+                                    </label>
+                                    <div class="control">
+                                        <input class="input" type="text" id="full-name" name="name" placeholder="Please enter your full name" required>
+                                    </div>
+                                </div>
+                
+                                <div class="field">
+                                    <label class="label">
+                                        Email
+                                    </label>
+                                    <div class="control">
+                                        <input class="input" type="email" id="email-address" name="_replyto" placeholder=" ex: slash@gunsNroses.net" required>
+                                    </div>
+                                </div>
+                
+                                <div class="field">
+                                    <label class="label">
+                                        Message
+                                    </label>
+                                    <div class="control">
+                                        <textarea class="textarea" id="message" name="message"></textarea>
+                                    </div>
+                                </div>
+                
+                                <div class="field">
+                                    <div class="control is-primary">
+                                        <input type="submit" id="contact-form-button" value="Submit" class="input is-link button">
+                                    </div>
+                                </div>
+                                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                            </form>
+          
+                        </div>
                     </div>
                 </div>
 
-                <div class="field">
-                    <label class="label">
-                        Email
-                    </label>
-                    <div class="control">
-                        <input class="input" type="email" id="email-address" name="_replyto" placeholder=" ex: slash@gunsNroses.net" required>
-                    </div>
-                </div>
+                <div class="column"></div>
 
-                <div class="field">
-                    <label class="label">
-                        Message
-                    </label>
-                    <div class="control">
-                        <textarea class="textarea" id="message" name="message"></textarea>
-                    </div>
-                </div>
+            </div>
 
-                <div class="field">
-                    <div class="control">
-                        <input class="input is-info button" type="submit" value="Submit">
-                    </div>
-                </div>
-
-
-       
-
-                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-            </form>
         </section>
 
         <!-- Footer -->
@@ -129,32 +142,10 @@
                 </div>
             </div>
         </footer>
+        <script src="./js/contact.js"></script>
     </body>
 
-    <script>
-        //code for navbar burger provided by bulma
-        document.addEventListener('DOMContentLoaded', () => {
-
-            // Get all "navbar-burger" elements
-            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-            // Add a click event on each of them
-            $navbarBurgers.forEach( el => {
-            el.addEventListener('click', () => {
-
-                // Get the target from the "data-target" attribute
-                const target = el.dataset.target;
-                const $target = document.getElementById(target);
-
-                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                el.classList.toggle('is-active');
-                $target.classList.toggle('is-active');
-
-            });
-            });
-
-        });
-    </script>
+    <script src="./js/burger.js"></script>
 
 </html>
 
