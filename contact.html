@@ -1,156 +1,179 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Bryan Bergo | Freshmen CS Major
-        </title>
+  <head>
+    <title>Bryan Bergo | Freshmen CS Major</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Bulma-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Bulma-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
 
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/ae1f78547c.js" crossorigin="anonymous"></script>
-        
-    </head>
-    <body>
-        
-        <!-- Navbar -->
-        <nav class="navbar is-link" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-              <button role="button" class="button navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarFull">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </button>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/ae1f78547c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="./">Bryan Bergo</a>
+        <button
+          role="button"
+          class="button navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarFull"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div id="navbarFull" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="./about.html"> About </a>
+
+          <a class="navbar-item" href="./projects.html"> Projects </a>
+
+          <a class="navbar-item" href="./contact.html"> Contact </a>
+        </div>
+
+        <div class="navbar-end is-hidden-mobile">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a
+                class="button is-info"
+                href="https://www.linkedin.com/in/bryan-bergo-952940259/"
+                target="new"
+              >
+                <span class="icon-text">
+                  <span class="icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </span>
+                  <span>linkedin</span>
+                </span>
+              </a>
+              <a
+                class="button is-black"
+                href="https://github.com/blbergo"
+                target="new"
+              >
+                <span class="icon-text">
+                  <span class="icon">
+                    <i class="fa-brands fa-github"></i>
+                  </span>
+                  <span>Github</span>
+                </span>
+              </a>
             </div>
-          
-            <div id="navbarFull" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item" href="./">
-                      Home
-                    </a>
-              
-                    <a class="navbar-item" href="./about.html">
-                      About
-                    </a>
-    
-                    <a class="navbar-item" href="./projects.html">
-                        Projects
-                    </a>
-    
-                    <a class="navbar-item" href="./contact.html">
-                        Contact
-                    </a>
-                    </div>
-          
-              <div class="navbar-end is-hidden-mobile">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-info " href="https://www.linkedin.com/in/bryan-bergo-952940259/" target="new">
-                            <span class="icon-text">
-                                <span class="icon">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </span>
-                                <span>linkedin</span>
-                            </span>
-                        </a>
-                        <a class="button is-black" href="https://github.com/blbergo" target="new">
-                            <span class="icon-text">
-                                <span class="icon">
-                                    <i class="fa-brands fa-github"></i>
-                                </span>
-                                <span>Github</span>
-                            </span>
-                        </a>
-                    </div>
-                </button>
-              </div>
-            </div>
-          </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
 
     <!-- Contact Form -->
-       <section class="section">
-            <div class="columns">
-                <div class="column"></div>
-                <div class="column">
+    <section class="section">
+      <div class="columns">
+        <div class="column"></div>
+        <div class="column">
+          <!-- Form -->
+          <div class="card">
+            <div id="contact-form-status"></div>
 
-                    <!-- Form -->
-                    <div class="card">
-                        <div id="contact-form-status"></div>
-
-                        <div class="card-content">
-                            <p class="title">Get In Touch</p>
-                            <form action="https://formspree.io/f/xjvdbder" method="POST" target="_blank" id="contact-form">
-                                <div class="field">
-                                    <label class="label">
-                                        Full Name
-                                    </label>
-                                    <div class="control">
-                                        <input class="input" type="text" id="full-name" name="name" placeholder="Please enter your full name" required>
-                                    </div>
-                                </div>
-                
-                                <div class="field">
-                                    <label class="label">
-                                        Email
-                                    </label>
-                                    <div class="control">
-                                        <input class="input" type="email" id="email-address" name="_replyto" placeholder=" ex: slash@gunsNroses.net" required>
-                                    </div>
-                                </div>
-                
-                                <div class="field">
-                                    <label class="label">
-                                        Message
-                                    </label>
-                                    <div class="control">
-                                        <textarea class="textarea" id="message" name="message"></textarea>
-                                    </div>
-                                </div>
-                
-                                <div class="field">
-                                    <div class="control is-primary">
-                                        <input type="submit" id="contact-form-button" value="Submit" class="input is-link button">
-                                    </div>
-                                </div>
-                                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-                            </form>
-          
-                        </div>
-                    </div>
+            <div class="card-content">
+              <p class="title">Get In Touch</p>
+              <form
+                action="https://formspree.io/f/xjvdbder"
+                method="POST"
+                target="_blank"
+                id="contact-form"
+              >
+                <div class="field">
+                  <label class="label"> Full Name </label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      id="full-name"
+                      name="name"
+                      placeholder="Please enter your full name"
+                      required
+                    />
+                  </div>
                 </div>
 
-                <div class="column"></div>
+                <div class="field">
+                  <label class="label"> Email </label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="email"
+                      id="email-address"
+                      name="_replyto"
+                      placeholder=" ex: slash@gunsNroses.net"
+                      required
+                    />
+                  </div>
+                </div>
 
+                <div class="field">
+                  <label class="label"> Message </label>
+                  <div class="control">
+                    <textarea
+                      class="textarea"
+                      id="message"
+                      name="message"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="control is-primary">
+                    <input
+                      type="submit"
+                      id="contact-form-button"
+                      value="Submit"
+                      class="input is-link button"
+                    />
+                  </div>
+                </div>
+                <input
+                  type="hidden"
+                  name="_subject"
+                  id="email-subject"
+                  value="Contact Form Submission"
+                />
+              </form>
             </div>
+          </div>
+        </div>
 
-        </section>
+        <div class="column"></div>
+      </div>
+    </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="columns has-text-centered">
-                <div class="column">
-                    <a>Home</a>
-                </div>
-                <div class="column">
-                    <a>About</a>
-                </div>
-                <div class="column">
-                    <a>Contact</a>
-                </div>
-            </div>
-        </footer>
-        <script src="./js/contact.js"></script>
-    </body>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="columns has-text-centered">
+        <div class="column">
+          <a>Home</a>
+        </div>
+        <div class="column">
+          <a>About</a>
+        </div>
+        <div class="column">
+          <a>Contact</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/contact.js"></script>
+  </body>
 
-    <script src="./js/burger.js"></script>
-
+  <script src="./js/burger.js"></script>
 </html>
-
-
-
-
-
-
