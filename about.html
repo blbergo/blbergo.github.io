@@ -1,0 +1,134 @@
+<!-- TODO: add content here-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bryan Bergo | Freshmen CS Major</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bulma-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/ae1f78547c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- multi-line tabs for mobile-->
+    <style>
+      .tabs ul {
+        flex-shrink: 1;
+        flex-wrap: wrap;
+        border-bottom-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="./">Bryan Bergo</a>
+        <button
+          role="button"
+          class="button navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarFull"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div id="navbarFull" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="./about.html"> About </a>
+
+          <a class="navbar-item" href="./projects.html"> Projects </a>
+
+          <a class="navbar-item" href="./contact.html"> Contact </a>
+        </div>
+
+        <div class="navbar-end is-hidden-mobile">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a
+                class="button is-info"
+                href="https://www.linkedin.com/in/bryan-bergo-952940259/"
+                target="new"
+              >
+                <span class="icon-text">
+                  <span class="icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </span>
+                  <span>linkedin</span>
+                </span>
+              </a>
+              <a
+                class="button is-black"
+                href="https://github.com/blbergo"
+                target="new"
+              >
+                <span class="icon-text">
+                  <span class="icon">
+                    <i class="fa-brands fa-github"></i>
+                  </span>
+                  <span>Github</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About me -->
+    <section class="container">
+      <div class="columns is-mobile">
+        <div class="column"></div>
+        <div class="column is-three-quarters">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image">
+                <img src="./img/bryan.jpg" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-1">Bryan Bergo</p>
+              <p class="subtitle is-4">
+                Freshmen Computer Science Major and Data Science Minor at Cal
+                Poly Pomona
+              </p>
+              <div class="box">
+                <div class="tabs is-boxed" id="tabs">
+                  <ul>
+                    <li class="is-active" id="general"><a>General</a></li>
+                    <li id="compSci"><a>Computer Science</a></li>
+                    <li id="music"><a>Music</a></li>
+                  </ul>
+                </div>
+
+                <div id="general-content" class="bio-content">general</div>
+
+                <div id="compSci-content" class="bio-content">compSci</div>
+
+                <div id="music-content" class="bio-content">music</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column"></div>
+      </div>
+    </section>
+  </body>
+  <script src="./js/tabs.js"></script>
+  <script src="./js/burger.js"></script>
+</html>
